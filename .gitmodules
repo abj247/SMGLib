@@ -1,3 +1,6 @@
 [submodule "Social-CADRL"]
 	path = Social-CADRL
 	url = https://github.com/abj247/Social-CADRL.git
+[submodule "Social-ORCA"]
+	path = Social-ORCA
+	url = https://github.com/abj247/Social-ORCA.git
