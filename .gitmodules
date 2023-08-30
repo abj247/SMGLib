@@ -4,3 +4,6 @@
 [submodule "Social-ORCA"]
 	path = Social-ORCA
 	url = https://github.com/abj247/Social-ORCA.git
+[submodule "Social-IMPC-DR"]
+	path = Social-IMPC-DR
+	url = https://github.com/abj247/Social-IMPC-DR.git
