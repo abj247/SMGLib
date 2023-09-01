@@ -21,7 +21,7 @@ The Multi Agent Social Deadlock Avoidance (MASDA) repository is a comprehensive 
 * Social Mini Games
 
 # Table of Contents
-- 
+- [**About**](#About)
 
 # Supporterd Scenarios
 Our repository covers a wide spectrum of social navigation scenarios, including but not limited to:
