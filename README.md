@@ -15,6 +15,9 @@
 # Multi Agent Social Deadlock Avodidance (MASDA)
 The Multi Agent Social Deadlock Avoidance (MASDA) repository is a comprehensive collection of algorithms and methodologies aimed at addressing the critical challenge of deadlock avoidance in multi-agent social navigation scenarios. In crowded environments such as doorways, hallways, and intersections, ensuring smooth and efficient movement of individuals or autonomous agents is paramount. The MASDA project focuses on providing solutions to mitigate and prevent the occurrence of deadlocks, enhancing the overall safety and functionality of these scenarios.
 
+# Table of Contents
+- [**About**](# Multi Agent Social Deadlock Avodidance (MASDA))
+
 # Supporterd Scenarios
 Our repository covers a wide spectrum of social navigation scenarios, including but not limited to:
 
