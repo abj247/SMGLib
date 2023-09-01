@@ -22,8 +22,23 @@ The Multi Agent Social Deadlock Avoidance (MASDA) repository is a comprehensive 
 
 # Table of Contents
 - [**About**](#About)
+- [**Dependcies**](#Dependcies)
 - [**Supported Scenarios**](#Supported-Scenarios)
 
+
+
+# Dependencies
+* Matlab 2021
+* Python         3.6
+* PyQt5          5.15.1
+* opencv-python  4.1.2.30
+* numpy          1.19.2
+* mosek          9.4.20
+* cvxpy          1.1.6
+* scipy          1.5.3
+* matplotlib     3.4.3
+
+  
 # Supporterd Scenarios
 Our repository covers a wide spectrum of social navigation scenarios, including but not limited to:
 
