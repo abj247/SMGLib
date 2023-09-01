@@ -7,7 +7,7 @@
 
 <div style="display: flex; flex-direction: row;">
     <img src="animations/CADRL_intersection.gif" width="200">
-    <img src="animations/GT_QP_CBF_doorway.gif" width="300">
+    <img src="animations/GT_QP_CBF_doorway.gif" width="200" height="300">
 </div>
 
 
