@@ -10,7 +10,7 @@
 </div>
 
 <div style="display: inline-block;">
-    <img src="animations/GT_QP_CBF_doorway.gif" width="300">
+    <img src="animations/GT_QP_CBF_doorway.gif" width="200">
 </div>
 
 # Multi Agent Social Deadlock Avodidance (MASDA)
