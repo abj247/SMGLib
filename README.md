@@ -6,14 +6,17 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/abj247/MASDA)
 
 <div style="display: flex; flex-direction: row;">
-    <img src="animations/CADRL_intersection.gif" width="200">
+    <img src="animations/CADRL_2agents_intersection.gif" width="200">
     <img src="animations/IMPC_doorway.gif" width="200" height="160">
     <img src="animations/CADRL_2agents_hallway.gif" width="200">
 </div>
 
 
 # Multi Agent Social Deadlock Avodidance (MASDA)
-The Multi Agent Social Deadlock Avoidance (MASDA) repository is a comprehensive collection of algorithms and methodologies aimed at addressing the critical challenge of deadlock avoidance in multi-agent social navigation scenarios. In crowded environments such as doorways, hallways, and intersections, ensuring smooth and efficient movement of individuals or autonomous agents is paramount. The MASDA project focuses on providing solutions to mitigate and prevent the occurrence of deadlocks, enhancing the overall safety and functionality of these scenarios.
+
+<p class="justify">The Multi Agent Social Deadlock Avoidance (MASDA) repository represents a culmination of extensive efforts dedicated to addressing the intricate challenge of deadlock avoidance within multi-agent social navigation contexts. In bustling environments characterized by doorways, hallways, intersections, and other intricate settings, the seamless and efficient movement of both individuals and autonomous agents is not just a convenience but a critical necessity. It is in this dynamic and challenging backdrop that the MASDA project takes center stage. Our primary objective revolves around the meticulous compilation of a diverse array of algorithms and methodologies hailing from various domains, each meticulously curated to serve as a potential solution for the multifaceted deadlock challenges prevalent in social navigation scenarios. </p>
+
+<p class="justify">These scenarios are marked by their inherent complexity, where agents need to navigate through spaces while intelligently avoiding bottlenecks, traffic congestion, and potential gridlocks. In the pursuit of deadlock avoidance excellence, the MASDA repository is meticulously designed to offer a plethora of innovative strategies tailored to address these real-world challenges. Whether it's guiding pedestrians through congested doorways, orchestrating the movements of autonomous vehicles within intricate intersections, or facilitating the seamless flow of agents in narrow hallways, MASDA houses a rich collection of algorithms catering to an extensive spectrum of scenarios.</p>
 
 # About
 * Multi Agent Navigation
