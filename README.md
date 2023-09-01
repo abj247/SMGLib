@@ -9,7 +9,7 @@
     <img src="animations/CADRL_2agents_intersection.gif" width="200">
     <img src="animations/IMPC_doorway.gif" width="200" height="160">
     <img src="animations/CADRL_2agents_hallway.gif" width="200">
-    <img src="animations/CADRL_2agents_doorway.gif" width="200">
+    <img src="animations/CADRL_2agents_doorway.gif" width="100">
 </div>
 
 
