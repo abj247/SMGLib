@@ -30,6 +30,7 @@ The Multi Agent Social Deadlock Avoidance (MASDA) repository is a comprehensive 
 # Dependencies
 * Matlab 2021
 * Python         3.6
+* gym            0.26.2
 * PyQt5          5.15.1
 * opencv-python  4.1.2.30
 * numpy          1.19.2
