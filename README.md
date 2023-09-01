@@ -5,8 +5,10 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/abj247/MASDA)
 ![GitHub top language](https://img.shields.io/github/languages/top/abj247/MASDA)
 
-<div align="left">
-    <img src="animations/CADRL_intersection.gif" width="200"><br/>
+<div style="display: flex; flex-direction: row;">
+    <img src="animations/CADRL_intersection.gif" width="200">
+    <img src="animations/GT_QP_CBF_doorway.gif" width="200" height="160">
 </div>
+
 
 # Multi Agent Social Deadlock Avodidance (MASDA)
