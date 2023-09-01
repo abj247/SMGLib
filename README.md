@@ -6,7 +6,7 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/abj247/MASDA)
 
 <p align="center">
-    <img src="animation/CADRL_intersection.gif"><br/>
+    <img src="animations/CADRL_intersection.gif"><br/>
 </p>
 
 
