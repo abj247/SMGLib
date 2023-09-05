@@ -48,7 +48,7 @@
 #Installation
 
 To eun the experiments first clone the repository for installation
-''' git clone https://github.com/abj247/MASDA.git '''
+``` git clone https://github.com/abj247/MASDA.git ```
 
 # Supporterd Scenarios
 Our repository covers a wide spectrum of social navigation scenarios, including but not limited to:
