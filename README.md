@@ -47,7 +47,7 @@
 
 #Installation
 
-To eun the experiments first clone the repository for installation
+To run the experiments first clone the repository for installation
 
 ``` git clone https://github.com/abj247/MASDA.git ```
 
