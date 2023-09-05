@@ -56,7 +56,7 @@
 
 To run the experiments first clone the repository for installation
 
-``` git clone https://github.com/abj247/Multi-agent Motion Planning with Deadlock Resolution.git ```
+``` git clone https://github.com/abj247/Multi-agent-Motion-Planning-with-Deadlock-Resolution.git ```
 
 Install the packages
 
