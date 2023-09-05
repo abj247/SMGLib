@@ -12,12 +12,16 @@ After the simulation is completed the animation will be saved at
 
 In the app options
 - `h` — Time Step
+- `Max Step` — Maximum number of time steps for simulation
+- ``Number` — Number of Agents
 - `K` —  Length of Horizon
 - `r_min` — minimum radius
 - `epsilon` — width of warning band
 - `start animation` —  to start the animation
 - `save animation` —  to save the animation with name results01.avi
 - `save trajectory` —  save the trajectory with name trajectory.svg
+- `random original state` — randomly selects orihinal state for agents
+- `random target` — randomly selects target state for agents
   
 IMPC-DR is a key asset within our repository, contributing to the enhancement of multi-agent systems' performance in social navigation contexts. Its ability to combine theoretical rigor with practical effectiveness makes it an invaluable tool for creating safe and efficient interactions between agents navigating shared spaces.
 
@@ -25,4 +29,4 @@ IMPC-DR is a key asset within our repository, contributing to the enhancement of
 
 To simulate a new expeiment use the argument with needed value, for reference see 
 ``` config.json ```
-Use ``` Set Original State ``` and ``` Set Target ``` and the use ``` start animation ``` to test the new envrionment
+Use ``` Set original State ``` and ``` Set target ``` and the use ``` start animation ``` to test the new envrionment
