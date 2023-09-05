@@ -30,6 +30,7 @@
 - [**Installation**](#Installation)
 - [**Supported Scenarios**](#Supported-Scenarios)
 - [**CADRL**](#CADRL)
+- [**ORCA-MAPF**](#ORCA-MAPF)
 
 
 
