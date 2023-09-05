@@ -13,11 +13,11 @@
 </div>
 
 
-# Multi Agent Social Deadlock Avodidance (MASDA)
+# Multi-agent Motion Planning with Deadlock Resolution
 
-<p class="justify">The Multi Agent Social Deadlock Avoidance (MASDA) repository represents a culmination of extensive efforts dedicated to addressing the intricate challenge of deadlock avoidance within multi-agent social navigation contexts. In bustling environments characterized by doorways, hallways, intersections, and other intricate settings, the seamless and efficient movement of both individuals and autonomous agents is not just a convenience but a critical necessity. It is in this dynamic and challenging backdrop that the MASDA project takes center stage. Our primary objective revolves around the meticulous compilation of a diverse array of algorithms and methodologies hailing from various domains, each meticulously curated to serve as a potential solution for the multifaceted deadlock challenges prevalent in social navigation scenarios. </p>
+<p class="justify">The Multi-agent Motion Planning with Deadlock Resolution repository represents a culmination of extensive efforts dedicated to addressing the intricate challenge of deadlock avoidance within multi-agent social navigation contexts. In bustling environments characterized by doorways, hallways, intersections, and other intricate settings, the seamless and efficient movement of both individuals and autonomous agents is not just a convenience but a critical necessity. It is in this dynamic and challenging backdrop that the MASDA project takes center stage. Our primary objective revolves around the meticulous compilation of a diverse array of algorithms and methodologies hailing from various domains, each meticulously curated to serve as a potential solution for the multifaceted deadlock challenges prevalent in social navigation scenarios. </p>
 
-<p class="justify">These scenarios are marked by their inherent complexity, where agents need to navigate through spaces while intelligently avoiding bottlenecks, traffic congestion, and potential gridlocks. In the pursuit of deadlock avoidance excellence, the MASDA repository is meticulously designed to offer a plethora of innovative strategies tailored to address these real-world challenges. Whether it's guiding pedestrians through congested doorways, orchestrating the movements of autonomous vehicles within intricate intersections, or facilitating the seamless flow of agents in narrow hallways, MASDA houses a rich collection of algorithms catering to an extensive spectrum of scenarios.</p>
+<p class="justify">These scenarios are marked by their inherent complexity, where agents need to navigate through spaces while intelligently avoiding bottlenecks, traffic congestion, and potential gridlocks. In the pursuit of deadlock avoidance excellence, the MASDA repository is meticulously designed to offer a plethora of innovative strategies tailored to address these real-world challenges. Whether it's guiding pedestrians through congested doorways, orchestrating the movements of autonomous vehicles within intricate intersections, or facilitating the seamless flow of agents in narrow hallways, Multi-agent Motion Planning with Deadlock Resolution houses a rich collection of algorithms catering to an extensive spectrum of scenarios.</p>
 
 # About
 * Multi Agent Navigation
@@ -38,6 +38,7 @@
 
 
 
+
 # Dependencies
 * Matlab         2014b
 * Python         3.6
@@ -55,7 +56,11 @@
 
 To run the experiments first clone the repository for installation
 
-``` git clone https://github.com/abj247/MASDA.git ```
+``` git clone https://github.com/abj247/Multi-agent-Motion-Planning-with-Deadlock-Resolution.git ```
+
+Install the packages
+
+```pip install -r requirements.txt```
 
 # Supporterd Scenarios
 Our repository covers a wide spectrum of social navigation scenarios, including but not limited to:
