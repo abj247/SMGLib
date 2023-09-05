@@ -39,7 +39,7 @@
 
 
 # Dependencies
-* Matlab 2021
+* Matlab         2014b
 * Python         3.6
 * gym            0.26.2
 * PyQt5          5.15.1
