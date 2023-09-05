@@ -161,6 +161,7 @@ To simulate Random CBF for social navigation scenario use the scenario file with
 3. Random_QP_CBF_Hallway.m
    
 For example to run hallway scenario with random perturbation
+
 ``` Random_QP_CBF_Hallway.m ```
 
 By introducing small, calculated perturbations to agent trajectories, Random CBF promotes the redistribution of agents within confined spaces. This dynamic approach prevents agents from getting stuck in gridlock situations and encourages them to explore alternative routes. While maintaining safety, Random CBF introduces an element of adaptability, making it an asset in scenarios where unpredictable agent behaviors and congestion prevail. Random CBF's integration into our repository underscores our commitment to exploring diverse solutions for social navigation. Its ability to combine safety, adaptability, and efficiency positions it as a valuable tool for orchestrating the seamless movement of agents in complex social environments.
