@@ -37,7 +37,8 @@ In the app options Agent have arguments
 For setting new environment go to 
 ``` ./envs/test_cases.py ```
 
-Create a new test case with the Agent arguments accoridng to the need, then replace the test case file in line 34 at ./experiments/src/example.py
+Create a new test case with the Agent arguments accoridng to the need see 
+``` config.json ``` for reference, then replace the test case file in line 34 at ./experiments/src/example.py
 To see animation run the experiment file
 
 ``` python experiment.py ```
