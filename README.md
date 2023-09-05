@@ -27,6 +27,7 @@
 # Table of Contents
 - [**About**](#About)
 - [**Dependcies**](#Dependcies)
+- [**Installation**](#Installation)
 - [**Supported Scenarios**](#Supported-Scenarios)
 
 
@@ -43,7 +44,12 @@
 * scipy          1.5.3
 * matplotlib     3.4.3
 
-  
+
+#Installation
+
+To eun the experiments first clone the repository for installation
+''' git clone https://github.com/abj247/MASDA.git '''
+
 # Supporterd Scenarios
 Our repository covers a wide spectrum of social navigation scenarios, including but not limited to:
 
