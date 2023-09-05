@@ -36,6 +36,10 @@
 - [**Success Metrics**](#Success-Metrics)
 - [**Citations**](#Citations)
 
+Install the requirements
+```
+pip install -r requirements.txt
+```
 
 
 # Dependencies
