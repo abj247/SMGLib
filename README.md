@@ -71,9 +71,10 @@ Continuous Action-Value Distributional Reinforcement Learning (CADRL) stands as 
 
 To run CADRL experiments for Social mini games go to specified folder and choose the scenario to run. For example to simulate doorway scenario with CADRL use following command
 
-``` cd ./Methods/Social-CADRL/experiments/src ```
-
-``` python doorway.py ```
+``` 
+cd ./Methods/Social-CADRL/experiments/src 
+ python doorway.py 
+```
 
 The animation file for the simulation will be saved at 
 ``` ./Methods/Social-CADRL/experiments/results/example/animations ```
