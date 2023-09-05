@@ -59,9 +59,8 @@ To run the experiments first clone the repository for installation
 ``` git clone https://github.com/abj247/MASDA.git ```
 
 Install the packages
-```
-pip install -r requirements.txt
-```
+
+```pip install -r requirements.txt```
 
 # Supporterd Scenarios
 Our repository covers a wide spectrum of social navigation scenarios, including but not limited to:
