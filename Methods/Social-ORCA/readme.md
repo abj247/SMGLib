@@ -114,3 +114,13 @@ In `src/experiments/single_test.cpp` or `src/experiments/series_test.cpp`:
 - `STOP_BY_SPEED` — enables/disables instance execution halting depending on the average speed of the agents.
 - `IS_TIME_BOUNDED` — enables/disables instance execution halting depending on the runtime.
 - `TIME_MAX` — the maximum runtime in ms.
+
+# Setting up New Environment
+
+To create and test new enviropnment create a new scxenario xml file in task_examples folder and set the needed values for flags given above. For reference see
+``` config.json ```
+
+To test the new enviornment with name new_scenario.xml in task_examples
+```
+./single_test ../task_examples/intersection.xml {num_agents}
+```
