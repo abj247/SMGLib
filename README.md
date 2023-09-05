@@ -32,6 +32,9 @@
 - [**CADRL**](#CADRL)
 - [**ORCA-MAPF**](#ORCA-MAPF)
 - [**IMPC-DR**](#IMPC-DR)
+- [**CBFs**](#CBFs)
+- [**Success Metrics](#Success-Metrics)
+- [**Citations](#Citations)
 
 
 
@@ -137,4 +140,64 @@ After the simulation is completed the animation will be saved at
 
 IMPC-DR is a key asset within our repository, contributing to the enhancement of multi-agent systems' performance in social navigation contexts. Its ability to combine theoretical rigor with practical effectiveness makes it an invaluable tool for creating safe and efficient interactions between agents navigating shared spaces.
 
+# CBFs
+Control Barrier Functions methods contains two methods which are:
+1.  Random CBF
+2.  Game-Theortic CBF (GT-CBF)
+
+CBFs methods are implemented in MATLAB. The code can be run with MATLAB 2014b and higher with MATLAB's optimization toolbox function 'quadprog.'
+To simulate GT-CBF first go to specified folder and initalize the addition of directories
+```0 
+cd ./Methods/Social-QP-CBF/
+init.m
+```
+
+## Random CBF
+Random CBF (Control Barrier Functions) for Social Navigation: Within the context of social navigation, Random CBF presents an innovative approach that employs controlled random perturbations to ensure smooth agent interactions while avoiding deadlocks. Agents operating within shared spaces like doorways, hallways, and intersections benefit from this method, as it enhances safety and efficiency through a unique strategy. Random CBF relies on safety barrier certificates and Control Barrier Functions, which act as safeguards against collisions and deadlock scenarios. These functions are designed to ensure that agents maintain safe distances and avoid unwanted interactions. The key innovation lies in introducing controlled randomness into agent movements, effectively breaking potential deadlocks and enabling dynamic decision-making.
+
+To simulate Random CBF for social navigation scenario use the scenario file within the options below:
+1. Random_QP_CBF_Doorway.m
+2. Random_QP_CBF_Intersection.m
+3. Random_QP_CBF_Hallway.m
+   
+For example to run hallway scenario with random perturbation
+``` Random_QP_CBF_Hallway.m ```
+
+By introducing small, calculated perturbations to agent trajectories, Random CBF promotes the redistribution of agents within confined spaces. This dynamic approach prevents agents from getting stuck in gridlock situations and encourages them to explore alternative routes. While maintaining safety, Random CBF introduces an element of adaptability, making it an asset in scenarios where unpredictable agent behaviors and congestion prevail. Random CBF's integration into our repository underscores our commitment to exploring diverse solutions for social navigation. Its ability to combine safety, adaptability, and efficiency positions it as a valuable tool for orchestrating the seamless movement of agents in complex social environments.
+
+## GT-CBF
+Game-Theoretic CBF (Cooperative Behavior Formation) for Social Navigation: In the realm of social navigation, Game-Theoretic CBF emerges as a strategic approach that leverages the principles of game theory to foster cooperative and safe interactions among agents. Each agent within a multi-agent system adheres to a defined game-theoretic relation, where the maximum velocity of an agent is intelligently regulated. This methodology fosters a cooperative atmosphere among agents, promoting harmonious movement within shared spaces such as hallways, doorways, and intersections. By dynamically adjusting velocities based on the number of agents present, Game-Theoretic CBF mitigates congestion and minimizes the likelihood of collisions. It optimizes the utilization of available space, ensuring that each agent moves efficiently while respecting the presence and rights of others.
+
+To run Game Therotic CBF for social navigation scenario first comment line 132-142 and uncomment line 148-158 in ARobotarium.m. Run the file with sepcified scenarion from below options to simulate 
+1. GT_QP_CBF_Doorway.m
+2. GT_QP_CBF_Intersection.m
+3. GT_QP_CBF_Hallway.m
+
+For example to run doorway scenario wirth Game Theoritc CBF run
+
+```  GT_QP_CBF_Doorway.m ```
+
+The animation will be saved at ./examples/
+
+Game-Theoretic CBF serves as a pivotal component within our repository, contributing to the development of intelligent and socially aware multi-agent systems. Its application ensures that agents navigate through complex social environments in a manner that prioritizes safety and fluidity, making it an indispensable asset for social navigation scenarios.
+
+# Success Metrics
+ In the pursuit of excellence within multi-agent social navigation, evaluating the performance and effectiveness of algorithms and methodologies is paramount. To comprehensively assess the impact of our solutions, we employ a set of carefully selected success metrics. These metrics serve as vital benchmarks, offering insights into the efficacy of our approaches in diverse scenarios. The success metrics incorporated into our repository encompass a range of key parameters, each shedding light on a specific aspect of agent behavior and system performance. These metrics include:
+
+- Average Delta Velocity: This metric is the average consecutive difference between linear velocities recorded by the agents over the whole time steps. This metric is crucial in assessing how consistently the agents move and adapt their speeds while executing their assigned tasks to reach the goal position.
+
+- Path Difference: This metric is the hasudorff distance between the nominal and actual trajectory covered by the agent. Here nominal is referred to the trajectory taken by the respective agent if it is present alone in the environment. Thsi metric helps us in evaluating the increased cost in path deviation against avoding the deadlock.
+
+- Makespan Ratio: This is the ratio between the time taken by the last agent and the first agent to reach the goal position. Through this metric helps us in evaluating the time complexity for the method in deadlock and collision avoidance.
+
+- Success Rate: This metric helps in determining the success of the method in deadlock avoidance, This is evaluated by taking the ratio of the number of times the agent successfully reached the goal position navigating safely to the total number of trials.
+
+By integrating these success metrics into our repository, we aim to provide a holistic view of our algorithms' performance and their suitability for addressing the challenges of multi-agent social navigation. These metrics empower us to continually refine and enhance our methodologies, ultimately contributing to safer and more efficient interactions between agents in shared spaces.
+
+# Citations
+1. [S. Dergachev and K. Yakovlev, "Distributed Multi-Agent Navigation Based on Reciprocal Collision Avoidance and Locally Confined Multi-Agent Path Finding," in Proceedings of the 17th International Conference on Automation Science and Engineering (CASE 2021), Lyon, France, 2021, pp. 1489-1494](https://arxiv.org/pdf/2107.00246.pdf)
+2. [Multi-Robot Collision Avoidance under Uncertainty with Probabilistic Safety Barrier Certificates Wenhao Luo, Wen Sun, and Ashish Kapoor](https://proceedings.neurips.cc/paper/2020/file/03793ef7d06ffd63d34ade9d091f1ced-Paper.pdf)
+3. [Deadlock Resolution and Feasibility Guarantee in MPC-based Multi-robot Trajectory Generation Yuda Chen, Meng Guo, Zhongkui Li](https://arxiv.org/pdf/2202.06071.pdf)
+4. [M. Everett, Y. Chen, and J. P. How, "Collision Avoidance in Pedestrian-Rich Environments with Deep Reinforcement Learning", IEEE Access Vol. 9, 2021, pp. 10357-1037](https://arxiv.org/pdf/1910.11689.pdf)
+5. [M. Everett, Y. Chen, and J. P. How, "Motion Planning Among Dynamic, Decision-Making Agents with Deep Reinforcement Learning", IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2018](https://arxiv.org/pdf/1703.08862.pdf)
 
