@@ -128,7 +128,8 @@ IMPC-DR for Social Navigation: IMPC-DR, or Infinite-Horizon Model Predictive Con
 
 To simulate IMPC-DR for social mini games go to specified folder and launch the app to run specific social scenario
 
-``` cd ./Methods/Social-IMPC-DR/ 
+``` 
+cd ./Methods/Social-IMPC-DR/ 
 python app.py
 ```
 After the simulation is completed the animation will be saved at 
