@@ -33,8 +33,8 @@
 - [**ORCA-MAPF**](#ORCA-MAPF)
 - [**IMPC-DR**](#IMPC-DR)
 - [**CBFs**](#CBFs)
-- [**Success Metrics](#Success-Metrics)
-- [**Citations](#Citations)
+- [**Success Metrics**](#Success-Metrics)
+- [**Citations**](#Citations)
 
 
 
