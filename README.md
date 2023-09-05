@@ -94,7 +94,7 @@ cmake -DCMAKE_BUILD_TYPE={Release/Debug} -DFULL_OUTPUT_FLAG={ON/OFF} -DFULL_LOG_
 make
 ```
 
-where optins:
+where optons:
 - `CMAKE_BUILD_TYPE` — Standard CMake option that specifies the build type. For more information see [[CMake Documentation](https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html)]    
 etc
   - `Release` uses to build with no debugging information. 
@@ -139,6 +139,15 @@ python app.py
 After the simulation is completed the animation will be saved at 
 ``` ./Methods/Social-IMPC-DR/ ```
 
+In the app options
+- `h` — Time Step
+- `K` —  Length of Horizon
+- `r_min` — minimum radius
+- `epsilon` — width of warning band
+- `start animation` —  to start the animation
+- `save animation` —  to save the animation with name results01.avi
+- `save trajectory` —  save the trajectory with name trajectory.svg
+- 
 IMPC-DR is a key asset within our repository, contributing to the enhancement of multi-agent systems' performance in social navigation contexts. Its ability to combine theoretical rigor with practical effectiveness makes it an invaluable tool for creating safe and efficient interactions between agents navigating shared spaces.
 
 # CBFs
