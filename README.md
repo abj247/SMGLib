@@ -147,7 +147,7 @@ In the app options
 - `start animation` —  to start the animation
 - `save animation` —  to save the animation with name results01.avi
 - `save trajectory` —  save the trajectory with name trajectory.svg
-- 
+  
 IMPC-DR is a key asset within our repository, contributing to the enhancement of multi-agent systems' performance in social navigation contexts. Its ability to combine theoretical rigor with practical effectiveness makes it an invaluable tool for creating safe and efficient interactions between agents navigating shared spaces.
 
 # CBFs
