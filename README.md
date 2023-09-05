@@ -31,6 +31,7 @@
 - [**Supported Scenarios**](#Supported-Scenarios)
 - [**CADRL**](#CADRL)
 - [**ORCA-MAPF**](#ORCA-MAPF)
+- [**IMPC-DR**](#IMPC-DR)
 
 
 
@@ -121,4 +122,18 @@ For example:
 intersection_2_log.xml
 ```
 By incorporating ORCA-MAPF into our collection, we enhance the capability of agents to make real-time decisions that promote both smooth movement and social compliance. It represents a key component in our endeavor to advance the science and technology of multi-agent systems for social navigation, contributing to safer and more efficient interactions between agents in shared spaces.
+
+# IMPC-DR
+IMPC-DR for Social Navigation: IMPC-DR, or Infinite-Horizon Model Predictive Control with Deadlock Resolution, holds immense promise in the context of social navigation scenarios. In bustling environments characterized by doorways, hallways, and intersections, where multiple agents, be they pedestrians or autonomous robots, coexist, IMPC-DR shines as a beacon of efficiency and safety. By providing rigorous guarantees on optimization feasibility, IMPC-DR ensures collision-free trajectory generation for agents within shared workspaces. It not only tackles the challenge of resolving deadlocks but also preemptively detects and resolves potential deadlocks through its adaptive resolution scheme. This proactive approach promotes smooth agent movements and prevents gridlocks, even in the most crowded and high-speed scenarios.
+
+To simulate IMPC-DR for social mini games go to specified folder and launch the app to run specific social scenario
+
+``` cd ./Methods/Social-IMPC-DR/ 
+python app.py
+```
+After the simulation is completed the animation will be saved at 
+``` ./Methods/Social-IMPC-DR/ ```
+
+IMPC-DR is a key asset within our repository, contributing to the enhancement of multi-agent systems' performance in social navigation contexts. Its ability to combine theoretical rigor with practical effectiveness makes it an invaluable tool for creating safe and efficient interactions between agents navigating shared spaces.
+
 
