@@ -73,7 +73,7 @@ To run CADRL experiments for Social mini games go to specified folder and choose
 
 ``` 
 cd ./Methods/Social-CADRL/experiments/src 
- python doorway.py 
+python doorway.py 
 ```
 
 The animation file for the simulation will be saved at 
