@@ -58,4 +58,16 @@ Our repository covers a wide spectrum of social navigation scenarios, including 
 
 * Hallway Navigation: Managing traffic flow in narrow hallways is critical for safe and efficient movement. Our algorithms focus on optimizing hallway traversal.
 
-* Intersection Management: Intersections, whether for pedestrians, vehicles, or mixed traffic, demand sophisticated deadlock avoidance strategies. We provide solutions to coordinate and prioritize agent movement at intersections
+* Intersection Management: Intersections, whether for pedestrians, vehicles, or mixed traffic, demand sophisticated deadlock avoidance strategies. We provide solutions to coordinate and prioritize agent movement at intersections.
+
+# CADRL
+Continuous Action-Value Distributional Reinforcement Learning (CADRL) stands as a pivotal component within our repository, specializing in the realm of social navigation. It is a cutting-edge framework that harnesses the power of reinforcement learning to enable autonomous agents to navigate complex social environments seamlessly. CADRL leverages continuous action-value distributional reinforcement learning techniques to imbue agents with the ability to make dynamic decisions while considering the presence and behaviors of other agents. 
+
+To run CADRL experiments for Social mini games go to specified folder and choose the scenario to run. For example to simulate doorway scenario with CADRL use following command
+``` cd ./Methods/Social-CADRL/experiments/src ```
+
+``` python doorway.py ```
+
+The animation file for the simulation will be saved at 
+``` ./Methods/Social-CADRL/experiments/results/example/animations ```
+
