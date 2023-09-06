@@ -147,6 +147,7 @@ After the simulation is completed the animation will be saved at
 In the app options
 - `h` — Time Step
 - `Max_Step`  — Maximum Number of Time Steps
+- `Number`  — Number of Agents
 - `K` —  Length of Horizon
 - `r_min` — minimum radius
 - `epsilon` — width of warning band
