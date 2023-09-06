@@ -100,16 +100,7 @@ Input file should contain:
 
 ### Other Options
 
-The implementation also contains a number of options that affect the operation of algorithms and experiments, but are not included in the input files (Sorry for that).
-
-In `include/const.h` file:
-- `COMMON_SPEED_BUFF_SIZE` — the number of steps that are taken into account to calculate the average speed that is used as a criterion for stopping the execution of an instance.
-- `MISSION_SMALL_SPEED` — the value, when the average speed decreases below which the execution of the instance stops.
-- `SPEED_BUFF_SIZE` — the number of steps that are taken into account to calculate the average speed that is used as a criterion for deadlock detection (for `speed-buffer` trigger).
-- `SMALL_SPEED` — the value, when the average speed decreases below which the agent assume that deadlock is occurred (for `speed-buffer` trigger).
-- `ECBS_SUBOUT_FACTOR` — Sub-optimal factor for ECBS algorithm.
-
-In `src/experiments/single_test.cpp` or `src/experiments/series_test.cpp`:
+In `src/experiments/single_test.cpp`
 - `STEP_MAX` — the maximum number of simulation steps.
 - `STOP_BY_SPEED` — enables/disables instance execution halting depending on the average speed of the agents.
 - `IS_TIME_BOUNDED` — enables/disables instance execution halting depending on the runtime.
