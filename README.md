@@ -71,90 +71,27 @@ Our repository covers a wide spectrum of social navigation scenarios, including 
 
 * Intersection Management: Intersections, whether for pedestrians, vehicles, or mixed traffic, demand sophisticated deadlock avoidance strategies. We provide solutions to coordinate and prioritize agent movement at intersections.
 
+* L Corner : Navigate L-shaped paths seamlessly, minimizing obstructions and improving traffic fluidity with our advanced strategies.
+
+* Blind Corner : Ensure safety with proactive measures for unpredictable and unseen challenges at blind corners.
+
+* Crowded Traffic :  Efficiently handle high-density areas, reducing congestion and enhancing overall movement flow.
+
+* Parallel Traffic : Master parallel movement dynamics to maintain steady and coordinated flows, reducing overlap and inefficiencies
+
+* Perpendicular Traffic : Address crossing trajectories effectively, ensuring smooth transitions and reduced collisions.
+
+* Circular Traffic : Navigate circular patterns with precision, promoting orderly and continuous motion in roundabout settings.
+
 # CADRL
 Continuous Action-Value Distributional Reinforcement Learning (CADRL) stands as a pivotal component within our repository, specializing in the realm of social navigation. It is a cutting-edge framework that harnesses the power of reinforcement learning to enable autonomous agents to navigate complex social environments seamlessly. CADRL leverages continuous action-value distributional reinforcement learning techniques to imbue agents with the ability to make dynamic decisions while considering the presence and behaviors of other agents. 
-
-To run CADRL experiments for Social mini games go to specified folder and choose the scenario to run. For example to simulate doorway scenario with CADRL use following command
-
-``` 
-cd ./Methods/Social-CADRL/experiments/src 
-python doorway.py 
-```
-
-The animation file for the simulation will be saved at 
-``` ./Methods/Social-CADRL/experiments/results/example/animations ```
-
 With CADRL, our repository equips agents to make informed, real-time decisions in congested scenarios, such as doorways, hallways, and intersections, ensuring not only efficient movement but also social adherence. CADRL plays a crucial role in enhancing the overall safety and functionality of multi-agent systems in social navigation contexts, making it an indispensable tool within our collection of algorithms and methodologies.
 
 # ORCA-MAPF
-ORCA-MAPF (Optimal Reciprocal Collision Avoidance for Multi-Agent Path Finding): Within our repository, ORCA-MAPF takes center stage as a robust and efficient solution designed to address multi-agent pathfinding challenges in dynamic social environments. This state-of-the-art algorithm leverages the principles of optimal reciprocal collision avoidance to enable autonomous agents to navigate complex scenarios, such as crowded doorways, hallways, and intersections, with precision and safety. ORCA-MAPF excels in optimizing the trajectories of multiple agents simultaneously, considering not only their paths but also their velocities and intentions.
-
-To run the ORCA-MAPF for social mini game scenario first build the project.
-
-```bash
-cd ./Methods/Social-ORCA/
-mkdir build
-cd build
-cmake -DCMAKE_BUILD_TYPE={Release/Debug} -DFULL_OUTPUT_FLAG={ON/OFF} -DFULL_LOG_FLAG={ON/OFF} -DMAPF_LOG_FLAG={ON/OFF} ..
-make
-```
-
-where optons:
-- `CMAKE_BUILD_TYPE` — Standard CMake option that specifies the build type. For more information see [[CMake Documentation](https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html)]    
-etc
-  - `Release` uses to build with no debugging information. 
-  - `Debug` usually uses to enable debugging information, disable optimization 
-- `FULL_OUTPUT_FLAG` — Enables/disables full output to stdout about reading xml files.
-- `FULL_LOG_FLAG` — Enables/disables logging to xml file agents state information
-- `MAPF_LOG_FLAG` — Enables/disables logging to xml files information about MAPF instances in coordinated mode
-
-After this launch the social navigation scenario to run using following command
-```bash
-./single_test {file_name num}
-```
-where 
-- `file_name` — name of the XML file, which contain social; scenario;
-- `num` — the number of agents with which tasks will run.
-
-For example to simulate intersection scenario use following command
-
-```bash
-./single_test ../task_examples/intersection.xml 2
-```
-Summary will be displayed after execution using standard output, full log (if such option in in CMake was chosen) 
-will be saved in same directory as task file and will be named according to the following pattern:
-```
-*taskfilename*_*number_of_agents*_log.xml
-```
-For example:
-```
-intersection_2_log.xml
-```
-By incorporating ORCA-MAPF into our collection, we enhance the capability of agents to make real-time decisions that promote both smooth movement and social compliance. It represents a key component in our endeavor to advance the science and technology of multi-agent systems for social navigation, contributing to safer and more efficient interactions between agents in shared spaces.
+ORCA-MAPF (Optimal Reciprocal Collision Avoidance for Multi-Agent Path Finding): Within our repository, ORCA-MAPF takes center stage as a robust and efficient solution designed to address multi-agent pathfinding challenges in dynamic social environments. This state-of-the-art algorithm leverages the principles of optimal reciprocal collision avoidance to enable autonomous agents to navigate complex scenarios, such as crowded doorways, hallways, and intersections, with precision and safety. ORCA-MAPF excels in optimizing the trajectories of multiple agents simultaneously, considering not only their paths but also their velocities and intentions. By incorporating ORCA-MAPF into our collection, we enhance the capability of agents to make real-time decisions that promote both smooth movement and social compliance. It represents a key component in our endeavor to advance the science and technology of multi-agent systems for social navigation, contributing to safer and more efficient interactions between agents in shared spaces.
 
 # IMPC-DR
 IMPC-DR for Social Navigation: IMPC-DR, or Infinite-Horizon Model Predictive Control with Deadlock Resolution, holds immense promise in the context of social navigation scenarios. In bustling environments characterized by doorways, hallways, and intersections, where multiple agents, be they pedestrians or autonomous robots, coexist, IMPC-DR shines as a beacon of efficiency and safety. By providing rigorous guarantees on optimization feasibility, IMPC-DR ensures collision-free trajectory generation for agents within shared workspaces. It not only tackles the challenge of resolving deadlocks but also preemptively detects and resolves potential deadlocks through its adaptive resolution scheme. This proactive approach promotes smooth agent movements and prevents gridlocks, even in the most crowded and high-speed scenarios.
-
-To simulate IMPC-DR for social mini games go to specified folder and launch the app to run specific social scenario
-
-``` 
-cd ./Methods/Social-IMPC-DR/ 
-python app.py
-```
-After the simulation is completed the animation will be saved at 
-``` ./Methods/Social-IMPC-DR/ ```
-
-In the app options
-- `h` — Time Step
-- `Max_Step`  — Maximum Number of Time Steps
-- `Number`  — Number of Agents
-- `K` —  Length of Horizon
-- `r_min` — minimum radius
-- `epsilon` — width of warning band
-- `start animation` —  to start the animation
-- `save animation` —  to save the animation with name results01.avi
-- `save trajectory` —  save the trajectory with name trajectory.svg
-  
 IMPC-DR is a key asset within our repository, contributing to the enhancement of multi-agent systems' performance in social navigation contexts. Its ability to combine theoretical rigor with practical effectiveness makes it an invaluable tool for creating safe and efficient interactions between agents navigating shared spaces.
 
 # CBFs
@@ -162,12 +99,7 @@ Control Barrier Functions methods contains two methods which are:
 1.  Random CBF
 2.  Game-Theortic CBF (GT-CBF)
 
-CBFs methods are implemented in MATLAB. The code can be run with MATLAB 2014b and higher with MATLAB's optimization toolbox function 'quadprog.'
-To simulate GT-CBF first go to specified folder and initalize the addition of directories
-```0 
-cd ./Methods/Social-QP-CBF/
-init.m
-```
+CBFs methods are implemented in MATLAB. The code can be run with MATLAB 2014b and higher with MATLAB's optimization toolbox function 'quadprog.
 
 ## Random CBF
 Random CBF (Control Barrier Functions) for Social Navigation: Within the context of social navigation, Random CBF presents an innovative approach that employs controlled random perturbations to ensure smooth agent interactions while avoiding deadlocks. Agents operating within shared spaces like doorways, hallways, and intersections benefit from this method, as it enhances safety and efficiency through a unique strategy. Random CBF relies on safety barrier certificates and Control Barrier Functions, which act as safeguards against collisions and deadlock scenarios. These functions are designed to ensure that agents maintain safe distances and avoid unwanted interactions. The key innovation lies in introducing controlled randomness into agent movements, effectively breaking potential deadlocks and enabling dynamic decision-making.
@@ -176,10 +108,6 @@ To simulate Random CBF for social navigation scenario use the scenario file with
 1. Random_QP_CBF_Doorway.m
 2. Random_QP_CBF_Intersection.m
 3. Random_QP_CBF_Hallway.m
-   
-For example to run hallway scenario with random perturbation
-
-``` Random_QP_CBF_Hallway.m ```
 
 By introducing small, calculated perturbations to agent trajectories, Random CBF promotes the redistribution of agents within confined spaces. This dynamic approach prevents agents from getting stuck in gridlock situations and encourages them to explore alternative routes. While maintaining safety, Random CBF introduces an element of adaptability, making it an asset in scenarios where unpredictable agent behaviors and congestion prevail. Random CBF's integration into our repository underscores our commitment to exploring diverse solutions for social navigation. Its ability to combine safety, adaptability, and efficiency positions it as a valuable tool for orchestrating the seamless movement of agents in complex social environments.
 
@@ -190,12 +118,6 @@ To run Game Therotic CBF for social navigation scenario first comment line 132-1
 1. GT_QP_CBF_Doorway.m
 2. GT_QP_CBF_Intersection.m
 3. GT_QP_CBF_Hallway.m
-
-For example to run doorway scenario wirth Game Theoritc CBF run
-
-```  GT_QP_CBF_Doorway.m ```
-
-The animation will be saved at ./examples/
 
 Game-Theoretic CBF serves as a pivotal component within our repository, contributing to the development of intelligent and socially aware multi-agent systems. Its application ensures that agents navigate through complex social environments in a manner that prioritizes safety and fluidity, making it an indispensable asset for social navigation scenarios.
 
