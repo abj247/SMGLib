@@ -83,6 +83,10 @@ Our repository covers a wide spectrum of social navigation scenarios, including 
 
 * Circular Traffic Management : Navigate circular patterns with precision, promoting orderly and continuous motion in roundabout settings.
 
+  <div style="display: flex; flex-direction: row;">
+    <img src="animations/Social_Benchmarks.png">
+  </div>
+
 # CADRL
 Continuous Action-Value Distributional Reinforcement Learning (CADRL) stands as a pivotal component within our repository, specializing in the realm of social navigation. It is a cutting-edge framework that harnesses the power of reinforcement learning to enable autonomous agents to navigate complex social environments seamlessly. CADRL leverages continuous action-value distributional reinforcement learning techniques to imbue agents with the ability to make dynamic decisions while considering the presence and behaviors of other agents. 
 With CADRL, our repository equips agents to make informed, real-time decisions in congested scenarios, such as doorways, hallways, and intersections, ensuring not only efficient movement but also social adherence. CADRL plays a crucial role in enhancing the overall safety and functionality of multi-agent systems in social navigation contexts, making it an indispensable tool within our collection of algorithms and methodologies.
