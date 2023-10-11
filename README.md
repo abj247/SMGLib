@@ -99,7 +99,7 @@ Control Barrier Functions methods contains two methods which are:
 1.  Random CBF
 2.  Game-Theortic CBF (GT-CBF)
 
-CBFs methods are implemented in MATLAB. The code can be run with MATLAB 2014b and higher with MATLAB's optimization toolbox function 'quadprog.
+CBFs methods are implemented in MATLAB. The code can be run with MATLAB 2014b and higher with MATLAB's optimization toolbox function 'quadprog'.
 
 ## Random CBF
 Random CBF (Control Barrier Functions) for Social Navigation: Within the context of social navigation, Random CBF presents an innovative approach that employs controlled random perturbations to ensure smooth agent interactions while avoiding deadlocks. Agents operating within shared spaces like doorways, hallways, and intersections benefit from this method, as it enhances safety and efficiency through a unique strategy. Random CBF relies on safety barrier certificates and Control Barrier Functions, which act as safeguards against collisions and deadlock scenarios. These functions are designed to ensure that agents maintain safe distances and avoid unwanted interactions. The key innovation lies in introducing controlled randomness into agent movements, effectively breaking potential deadlocks and enabling dynamic decision-making.
