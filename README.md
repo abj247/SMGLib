@@ -71,17 +71,17 @@ Our repository covers a wide spectrum of social navigation scenarios, including 
 
 * Intersection Management: Intersections, whether for pedestrians, vehicles, or mixed traffic, demand sophisticated deadlock avoidance strategies. We provide solutions to coordinate and prioritize agent movement at intersections.
 
-* L Corner : Navigate L-shaped paths seamlessly, minimizing obstructions and improving traffic fluidity with our advanced strategies.
+* L-Corner Navigation : Navigate L-shaped paths seamlessly, minimizing obstructions and improving traffic fluidity with our advanced strategies.
 
-* Blind Corner : Ensure safety with proactive measures for unpredictable and unseen challenges at blind corners.
+* Blind Corner Navigation : Ensure safety with proactive measures for unpredictable and unseen challenges at blind corners.
 
-* Crowded Traffic :  Efficiently handle high-density areas, reducing congestion and enhancing overall movement flow.
+* Crowded Traffic Management :  Efficiently handle high-density areas, reducing congestion and enhancing overall movement flow.
 
-* Parallel Traffic : Master parallel movement dynamics to maintain steady and coordinated flows, reducing overlap and inefficiencies
+* Parallel Traffic Management : Master parallel movement dynamics to maintain steady and coordinated flows, reducing overlap and inefficiencies
 
-* Perpendicular Traffic : Address crossing trajectories effectively, ensuring smooth transitions and reduced collisions.
+* Perpendicular Traffic Management : Address crossing trajectories effectively, ensuring smooth transitions and reduced collisions.
 
-* Circular Traffic : Navigate circular patterns with precision, promoting orderly and continuous motion in roundabout settings.
+* Circular Traffic Management : Navigate circular patterns with precision, promoting orderly and continuous motion in roundabout settings.
 
 # CADRL
 Continuous Action-Value Distributional Reinforcement Learning (CADRL) stands as a pivotal component within our repository, specializing in the realm of social navigation. It is a cutting-edge framework that harnesses the power of reinforcement learning to enable autonomous agents to navigate complex social environments seamlessly. CADRL leverages continuous action-value distributional reinforcement learning techniques to imbue agents with the ability to make dynamic decisions while considering the presence and behaviors of other agents. 
