@@ -84,7 +84,7 @@ Our repository covers a wide spectrum of social navigation scenarios, including 
 * Circular Traffic Management : Navigate circular patterns with precision, promoting orderly and continuous motion in roundabout settings.
 
   <div style="display: flex; flex-direction: row;">
-    <img src="animations/Social Benchmarks.png">
+    <img src="animations/Social Benchmarks.png" width="800">
   </div>
 
 # CADRL
