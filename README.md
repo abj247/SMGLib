@@ -126,7 +126,7 @@ To run Game Therotic CBF for social navigation scenario first comment line 132-1
 
 Game-Theoretic CBF serves as a pivotal component within our repository, contributing to the development of intelligent and socially aware multi-agent systems. Its application ensures that agents navigate through complex social environments in a manner that prioritizes safety and fluidity, making it an indispensable asset for social navigation scenarios.
 
-#GBPlanner
+# GBPlanner
 Gaussian Belief Path Planner (GBPPlanner) works on prbablistic inference to update its belief for each agent to genertate the optimal trajectory. This distributed approach employs a factor graph to encapsulate dynamics and social interaction constraints over a forward time window. Rather than central control, GBP Planning emphasizes local computations for each agent, combined with peer-to-peer communication. The method models the social navigation problem as a dynamic optimization task, where variables signify agent positions and velocities in shared spaces. These variables are linked by constraints that account for individual agent dynamics and the necessity to navigate without colliding with other agents or static elements, reflecting social norms and behaviors. The core innovation lies in its distributed inference mechanism, allowing agents to collaboratively plan and adapt their paths in socially-aware manners, ensuring smooth and socially acceptable navigation even in environments with intermittent communication.
 
 # Success Metrics
