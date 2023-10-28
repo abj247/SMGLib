@@ -51,6 +51,9 @@
 * cvxpy          1.1.6
 * scipy          1.5.3
 * matplotlib     3.4.3
+* cmake          3.10
+* make
+* OpenMP
 
 
 # Installation
