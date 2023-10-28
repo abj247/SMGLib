@@ -33,6 +33,7 @@
 - [**ORCA-MAPF**](#ORCA-MAPF)
 - [**IMPC-DR**](#IMPC-DR)
 - [**CBFs**](#CBFs)
+- [**GBPPlanner**](#GBPPlanner)
 - [**Success Metrics**](#Success-Metrics)
 - [**Citations**](#Citations)
 
@@ -116,7 +117,7 @@ To simulate Random CBF for social navigation scenario use the scenario file with
 By introducing small, calculated perturbations to agent trajectories, Random CBF promotes the redistribution of agents within confined spaces. This dynamic approach prevents agents from getting stuck in gridlock situations and encourages them to explore alternative routes. While maintaining safety, Random CBF introduces an element of adaptability, making it an asset in scenarios where unpredictable agent behaviors and congestion prevail. Random CBF's integration into our repository underscores our commitment to exploring diverse solutions for social navigation. Its ability to combine safety, adaptability, and efficiency positions it as a valuable tool for orchestrating the seamless movement of agents in complex social environments.
 
 ## GT-CBF
-Game-Theoretic CBF (Cooperative Behavior Formation) for Social Navigation: In the realm of social navigation, Game-Theoretic CBF emerges as a strategic approach that leverages the principles of game theory to foster cooperative and safe interactions among agents. Each agent within a multi-agent system adheres to a defined game-theoretic relation, where the maximum velocity of an agent is intelligently regulated. This methodology fosters a cooperative atmosphere among agents, promoting harmonious movement within shared spaces such as hallways, doorways, and intersections. By dynamically adjusting velocities based on the number of agents present, Game-Theoretic CBF mitigates congestion and minimizes the likelihood of collisions. It optimizes the utilization of available space, ensuring that each agent moves efficiently while respecting the presence and rights of others.
+Game-Theoretic CBF (Control Barrier Function) for Social Navigation: In the realm of social navigation, Game-Theoretic CBF emerges as a strategic approach that leverages the principles of game theory to foster cooperative and safe interactions among agents. Each agent within a multi-agent system adheres to a defined game-theoretic relation, where the maximum velocity of an agent is intelligently regulated. This methodology fosters a cooperative atmosphere among agents, promoting harmonious movement within shared spaces such as hallways, doorways, and intersections. By dynamically adjusting velocities based on the number of agents present, Game-Theoretic CBF mitigates congestion and minimizes the likelihood of collisions. It optimizes the utilization of available space, ensuring that each agent moves efficiently while respecting the presence and rights of others.
 
 To run Game Therotic CBF for social navigation scenario first comment line 132-142 and uncomment line 148-158 in ARobotarium.m. Run the file with sepcified scenarion from below options to simulate 
 1. GT_QP_CBF_Doorway.m
@@ -124,6 +125,9 @@ To run Game Therotic CBF for social navigation scenario first comment line 132-1
 3. GT_QP_CBF_Hallway.m
 
 Game-Theoretic CBF serves as a pivotal component within our repository, contributing to the development of intelligent and socially aware multi-agent systems. Its application ensures that agents navigate through complex social environments in a manner that prioritizes safety and fluidity, making it an indispensable asset for social navigation scenarios.
+
+#GBPlanner
+Gaussian Belief Path Planner (GBPPlanner) works on prbablistic inference to update its belief for each agent to genertate the optimal trajectory. This distributed approach employs a factor graph to encapsulate dynamics and social interaction constraints over a forward time window. Rather than central control, GBP Planning emphasizes local computations for each agent, combined with peer-to-peer communication. The method models the social navigation problem as a dynamic optimization task, where variables signify agent positions and velocities in shared spaces. These variables are linked by constraints that account for individual agent dynamics and the necessity to navigate without colliding with other agents or static elements, reflecting social norms and behaviors. The core innovation lies in its distributed inference mechanism, allowing agents to collaboratively plan and adapt their paths in socially-aware manners, ensuring smooth and socially acceptable navigation even in environments with intermittent communication.
 
 # Success Metrics
  In the pursuit of excellence within multi-agent social navigation, evaluating the performance and effectiveness of algorithms and methodologies is paramount. To comprehensively assess the impact of our solutions, we employ a set of carefully selected success metrics. These metrics serve as vital benchmarks, offering insights into the efficacy of our approaches in diverse scenarios. The success metrics incorporated into our repository encompass a range of key parameters, each shedding light on a specific aspect of agent behavior and system performance. These metrics include:
