@@ -148,7 +148,7 @@ By integrating these success metrics into our repository, we aim to provide a ho
 To evaluate and visualize the results use the below script:
 
 ```
- python evaluate.py --path_deviation_csv path_deviation_file.csv --avg_delta_velocity_csv avg_delta_velocity_file.csv --evaluate_path_deviation --evaluate_avg_delta_velocity 
+ python evaluate.py --path_deviation_csv path_deviation_file.csv --avg_delta_velocity_csv avg_delta_velocity_file.csv --evaluate_path_deviation --evaluate_avg_delta_velocity --save_path_deviation_plot 
 ```
 
 # Citations
