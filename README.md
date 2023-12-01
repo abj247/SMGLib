@@ -105,7 +105,7 @@ IMPC-DR is a key asset within our repository, contributing to the enhancement of
 # CBFs
 Control Barrier Functions methods contains two methods which are:
 1.  Random CBF
-2.  Game-Theortic CBF (GT-CBF)
+2.  Auction Based
 
 CBFs methods are implemented in MATLAB. The code can be run with MATLAB 2014b and higher with MATLAB's optimization toolbox function 'quadprog'.
 
