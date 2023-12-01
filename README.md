@@ -158,5 +158,5 @@ To evaluate and visualize the results use the below script:
 4. [M. Everett, Y. Chen, and J. P. How, "Collision Avoidance in Pedestrian-Rich Environments with Deep Reinforcement Learning", IEEE Access Vol. 9, 2021, pp. 10357-1037](https://arxiv.org/pdf/1910.11689.pdf)
 5. [M. Everett, Y. Chen, and J. P. How, "Motion Planning Among Dynamic, Decision-Making Agents with Deep Reinforcement Learning", IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2018](https://arxiv.org/pdf/1703.08862.pdf)
 6. [A. Patwardhan, R. Murai and A. J. Davison, "Distributing Collaborative Multi-Robot Planning With Gaussian Belief Propagation," in IEEE Robotics and Automation Letters, vol. 8, no. 2, pp. 552-559, Feb. 2023, doi: 10.1109/LRA.2022.3227858.](https://arxiv.org/pdf/2203.11618.pdf)
-7. [ "NH-TTC: A generalized framework for anticipatory collision avoidance"](http://motion.cs.umn.edu/r/NH-TTC/)
+7. [Davis, Bobby, Ioannis Karamouzas, and Stephen J. Guy. "NH-TTC: A gradient-based framework for generalized anticipatory collision avoidance." arXiv preprint arXiv:1907.05945 (2019).](http://motion.cs.umn.edu/r/NH-TTC/)
 
