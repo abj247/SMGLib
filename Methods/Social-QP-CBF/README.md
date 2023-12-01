@@ -40,4 +40,14 @@ For example to run doorway scenario wirth Game Theoritc CBF run
 The animation will be saved at ./examples/
 
 Game-Theoretic CBF serves as a pivotal component within our repository, contributing to the development of intelligent and socially aware multi-agent systems. Its application ensures that agents navigate through complex social environments in a manner that prioritizes safety and fluidity, making it an indispensable asset for social navigation scenarios.
-    
+
+
+# Setting up New Environment
+
+To create and test new environment change the configurations form the file you want to change.
+- `N` - Number of Agents
+- `x` - Position of each agent
+- `goal_condition` - Goal positions for agents
+- `writerObj`-  Name of saved video
+
+run the file to test the scenario with new envirionment
