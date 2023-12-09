@@ -68,7 +68,7 @@ def main():
     parser.add_argument("--save_path_deviation_plot", action="store_true", help="Save path deviation plot")
     args = parser.parse_args()
 
-    if args.evaluate_path_deviation and args.path_deviation_csv:
+    if args.evaluate_path_deviation and args.save_path_deviation_plot:
         plt, _, _ = calculate_path_deviation(args.path_deviation_csv)
         if args.save_path_deviation_plot:
             if not os.path.exists('path_deviation'):

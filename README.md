@@ -66,6 +66,12 @@ Install the packages
 
 ```pip install -r requirements.txt```
 
+Evaluation 
+
+```
+ python evaluate.py --path_deviation_csv path_deviation_file.csv --avg_delta_velocity_csv avg_delta_velocity_file.csv --evaluate_path_deviation --evaluate_avg_delta_velocity --save_path_deviation_plot 
+```
+
 # Supporterd Scenarios
 Our repository covers a wide spectrum of social navigation scenarios, including but not limited to:
 
@@ -105,7 +111,7 @@ IMPC-DR is a key asset within our repository, contributing to the enhancement of
 # CBFs
 Control Barrier Functions methods contains two methods which are:
 1.  Random CBF
-2.  Game-Theortic CBF (GT-CBF)
+2.  Auction Based
 
 CBFs methods are implemented in MATLAB. The code can be run with MATLAB 2014b and higher with MATLAB's optimization toolbox function 'quadprog'.
 
@@ -119,15 +125,15 @@ To simulate Random CBF for social navigation scenario use the scenario file with
 
 By introducing small, calculated perturbations to agent trajectories, Random CBF promotes the redistribution of agents within confined spaces. This dynamic approach prevents agents from getting stuck in gridlock situations and encourages them to explore alternative routes. While maintaining safety, Random CBF introduces an element of adaptability, making it an asset in scenarios where unpredictable agent behaviors and congestion prevail. Random CBF's integration into our repository underscores our commitment to exploring diverse solutions for social navigation. Its ability to combine safety, adaptability, and efficiency positions it as a valuable tool for orchestrating the seamless movement of agents in complex social environments.
 
-## GT-CBF
-Game-Theoretic CBF (Control Barrier Function) for Social Navigation: In the realm of social navigation, Game-Theoretic CBF emerges as a strategic approach that leverages the principles of game theory to foster cooperative and safe interactions among agents. Each agent within a multi-agent system adheres to a defined game-theoretic relation, where the maximum velocity of an agent is intelligently regulated. This methodology fosters a cooperative atmosphere among agents, promoting harmonious movement within shared spaces such as hallways, doorways, and intersections. By dynamically adjusting velocities based on the number of agents present, Game-Theoretic CBF mitigates congestion and minimizes the likelihood of collisions. It optimizes the utilization of available space, ensuring that each agent moves efficiently while respecting the presence and rights of others.
+## Auction-Based
+Auction based method for Social Navigation: In the realm of social navigation, Auction Based method emerges as a strategic approach that leverages the principles of game theory to foster cooperative and safe interactions among agents. Each agent within a multi-agent system adheres to a defined game-theoretic relation, where the maximum velocity of an agent is intelligently regulated. This methodology fosters a cooperative atmosphere among agents, promoting harmonious movement within shared spaces such as hallways, doorways, and intersections. By dynamically adjusting velocities based on the number of agents present, Auction Based method mitigates congestion and minimizes the likelihood of collisions. It optimizes the utilization of available space, ensuring that each agent moves efficiently while respecting the presence and rights of others.
 
-To run Game Therotic CBF for social navigation scenario first comment line 132-142 and uncomment line 148-158 in ARobotarium.m. Run the file with sepcified scenarion from below options to simulate 
+To run Auction Based method for social navigation scenario first comment line 132-142 and uncomment line 148-158 in ARobotarium.m. Run the file with sepcified scenarion from below options to simulate 
 1. GT_QP_CBF_Doorway.m
 2. GT_QP_CBF_Intersection.m
 3. GT_QP_CBF_Hallway.m
 
-Game-Theoretic CBF serves as a pivotal component within our repository, contributing to the development of intelligent and socially aware multi-agent systems. Its application ensures that agents navigate through complex social environments in a manner that prioritizes safety and fluidity, making it an indispensable asset for social navigation scenarios.
+Auction based method serves as a pivotal component within our repository, contributing to the development of intelligent and socially aware multi-agent systems. Its application ensures that agents navigate through complex social environments in a manner that prioritizes safety and fluidity, making it an indispensable asset for social navigation scenarios.
 
 # GBPPlanner
 Gaussian Belief Path Planner (GBPPlanner) works on prbablistic inference to update its belief for each agent to genertate the optimal trajectory. This distributed approach employs a factor graph to encapsulate dynamics and social interaction constraints over a forward time window. Rather than central control, GBP Planning emphasizes local computations for each agent, combined with peer-to-peer communication. The method models the social navigation problem as a dynamic optimization task, where variables signify agent positions and velocities in shared spaces. These variables are linked by constraints that account for individual agent dynamics and the necessity to navigate without colliding with other agents or static elements, reflecting social norms and behaviors. The core innovation lies in its distributed inference mechanism, allowing agents to collaboratively plan and adapt their paths in socially-aware manners, ensuring smooth and socially acceptable navigation even in environments with intermittent communication.
@@ -137,7 +143,7 @@ Gaussian Belief Path Planner (GBPPlanner) works on prbablistic inference to upda
 
 - Average Delta Velocity: This metric is the average consecutive difference between linear velocities recorded by the agents over the whole time steps. This metric is crucial in assessing how consistently the agents move and adapt their speeds while executing their assigned tasks to reach the goal position.
 
-- Path Difference: This metric is the hasudorff distance between the nominal and actual trajectory covered by the agent. Here nominal is referred to the trajectory taken by the respective agent if it is present alone in the environment. Thsi metric helps us in evaluating the increased cost in path deviation against avoding the potential deadlock.
+- Path Difference: This metric is the hausdorff distance between the nominal and actual trajectory covered by the agent. Here nominal is referred to the trajectory taken by the respective agent if it is present alone in the environment. Thsi metric helps us in evaluating the increased cost in path deviation against avoding the potential deadlock.
 
 - Makespan Ratio: This is the ratio between the time taken by the last agent and the first agent to reach the goal position. Through this metric helps us in evaluating the time complexity for the method in deadlock and collision avoidance.
 
@@ -148,7 +154,7 @@ By integrating these success metrics into our repository, we aim to provide a ho
 To evaluate and visualize the results use the below script:
 
 ```
- python evaluate.py --path_deviation_csv path_deviation_file.csv --avg_delta_velocity_csv avg_delta_velocity_file.csv --evaluate_path_deviation --evaluate_avg_delta_velocity 
+ python evaluate.py --path_deviation_csv path_deviation_file.csv --avg_delta_velocity_csv avg_delta_velocity_file.csv --evaluate_path_deviation --evaluate_avg_delta_velocity --save_path_deviation_plot 
 ```
 
 # Citations
@@ -158,4 +164,5 @@ To evaluate and visualize the results use the below script:
 4. [M. Everett, Y. Chen, and J. P. How, "Collision Avoidance in Pedestrian-Rich Environments with Deep Reinforcement Learning", IEEE Access Vol. 9, 2021, pp. 10357-1037](https://arxiv.org/pdf/1910.11689.pdf)
 5. [M. Everett, Y. Chen, and J. P. How, "Motion Planning Among Dynamic, Decision-Making Agents with Deep Reinforcement Learning", IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2018](https://arxiv.org/pdf/1703.08862.pdf)
 6. [A. Patwardhan, R. Murai and A. J. Davison, "Distributing Collaborative Multi-Robot Planning With Gaussian Belief Propagation," in IEEE Robotics and Automation Letters, vol. 8, no. 2, pp. 552-559, Feb. 2023, doi: 10.1109/LRA.2022.3227858.](https://arxiv.org/pdf/2203.11618.pdf)
+7. [Davis, Bobby, Ioannis Karamouzas, and Stephen J. Guy. "NH-TTC: A gradient-based framework for generalized anticipatory collision avoidance." arXiv preprint arXiv:1907.05945 (2019).](http://motion.cs.umn.edu/r/NH-TTC/)
 
