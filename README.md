@@ -6,10 +6,10 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/abj247/MASDA)
 
 <div style="display: flex; flex-direction: row;">
-    <img src="animations/CADRL_2agents_intersection.gif" width="200">
-    <img src="animations/IMPC_doorway.gif" width="200" height="160">
-    <img src="animations/CADRL_2agents_hallway.gif" width="200">
-    <img src="animations/CADRL_2agents_doorway.gif" width="200">
+    <img src="animations/CADRL_intersectionn.gif" width="200">
+    <img src="animations/CADRL_doorway.gif" width="200" height="160">
+    <img src="animations/CADRL_hallway.gif" width="200">
+    <img src="animations/CADRL_lcor.gif" width="200">
 </div>
 
 
@@ -69,7 +69,8 @@ Install the packages
 Evaluation 
 
 ```
- python evaluate.py --path_deviation_csv path_deviation_file.csv --avg_delta_velocity_csv avg_delta_velocity_file.csv --evaluate_path_deviation --evaluate_avg_delta_velocity --save_path_deviation_plot 
+python evaluate.py --path_deviation_csv path_deviation_file.csv --avg_delta_velocity_csv avg_delta_velocity_file.csv --evaluate_path_deviation --evaluate_avg_delta_velocity --save_path_deviation_plot --method method_name --scenario scenario_name
+ 
 ```
 
 # Supporterd Scenarios
@@ -154,7 +155,7 @@ By integrating these success metrics into our repository, we aim to provide a ho
 To evaluate and visualize the results use the below script:
 
 ```
- python evaluate.py --path_deviation_csv path_deviation_file.csv --avg_delta_velocity_csv avg_delta_velocity_file.csv --evaluate_path_deviation --evaluate_avg_delta_velocity --save_path_deviation_plot 
+ python evaluate.py --path_deviation_csv path_deviation_file.csv --avg_delta_velocity_csv avg_delta_velocity_file.csv --evaluate_path_deviation --evaluate_avg_delta_velocity --save_path_deviation_plot --method method_name --scenario scenario_name 
 ```
 
 # Citations

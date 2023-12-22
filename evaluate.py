@@ -59,6 +59,19 @@ def calculate_avg_delta_velocity(avg_delta_velocity_csv):
 
     return sum_abs_diffs
 
+def display_gif(method, scenario):
+    # Construct the path to the gif file
+    gif_path = os.path.join('vis', method, scenario + '.gif')
+
+    # Check if the gif file exists
+    if os.path.exists(gif_path):
+        # Display the gif using PIL
+        with Image.open(gif_path) as img:
+            img.show()
+    else:
+        print(f"Error: {gif_path} does not exist")
+
+
 def main():
     parser = argparse.ArgumentParser(description="Evaluate Path Deviation and Average Delta Velocity")
     parser.add_argument("--path_deviation_csv", type=str, help="CSV file for path deviation")
@@ -66,7 +79,9 @@ def main():
     parser.add_argument("--evaluate_path_deviation", action="store_true", help="Evaluate path deviation")
     parser.add_argument("--evaluate_avg_delta_velocity", action="store_true", help="Evaluate average delta velocity")
     parser.add_argument("--save_path_deviation_plot", action="store_true", help="Save path deviation plot")
-    args = parser.parse_args()
+   parser.add_argument("--method", type=str, help="Method name")
+   parser.add_argument("--scenario", type=str, help="Scenario name")
+   args = parser.parse_args()
 
     if args.evaluate_path_deviation and args.save_path_deviation_plot:
         plt, _, _ = calculate_path_deviation(args.path_deviation_csv)
