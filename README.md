@@ -6,10 +6,10 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/abj247/MASDA)
 
 <div style="display: flex; flex-direction: row;">
-    <img src="animations/CADRL_intersectionn.gif" width="200">
-    <img src="animations/CADRL_doorway.gif" width="200" height="160">
-    <img src="animations/CADRL_hallway.gif" width="200">
-    <img src="animations/CADRL_lcor.gif" width="200">
+    <img src="vis/cadrl/intersectionn.gif" width="200">
+    <img src="vis/cadrl//doorway.gif" width="200" height="160">
+    <img src="vis/cadrl/hallway.gif" width="200">
+    <img src="vis/cadrl/lcor.gif" width="200">
 </div>
 
 
