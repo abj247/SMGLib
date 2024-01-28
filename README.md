@@ -162,10 +162,10 @@ Our repository covers a wide spectrum of social navigation scenarios, including 
 <img width=100% src="scenarios/parallel.png" alt="Parallel"/>
 </td>
 <td align="center" valign="center" bgcolor="#FFFFFF">
-<img width=100% src="vis/nhttc/perpencicular.png" alt="Perpendicular"/>
+<img width=100% src="scenarios/perpencicular.png" alt="Perpendicular"/>
 </td>
 <td align="center" valign="center" bgcolor="#FFFFFF">
-<img width=100% src="vis/nhttc/circular.png" alt="Circular"/>
+<img width=100% src="scenarios/circular.png" alt="Circular"/>
 </td>
 </tr>
 </table>
