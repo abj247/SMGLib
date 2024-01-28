@@ -55,7 +55,7 @@ The animations below give an overview of typical problems that OMG-tools can han
 <img width=100% src="vis/nhttc/lcor.gif" alt="NH-TTC: L-corner"/>
 </td>
 <td align="center" valign="center" bgcolor="#FFFFFF">
-<img width=100% src="vis/nhttc/hallway.gif" alt="NH-TTC: Hallway"/>
+<img width=100% src="vis/nhttc/intersection.gif" alt="NH-TTC: Intersection"/>
 </td>
 </tr>
 </table>
