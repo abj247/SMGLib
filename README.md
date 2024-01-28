@@ -10,6 +10,7 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/abj247/MASDA)
 ![GitHub top language](https://img.shields.io/github/languages/top/abj247/MASDA)
 ![GitHub issues](https://img.shields.io/github/issues/abj247/SMGLib)
+![GitHub watchers](https://img.shields.io/github/watchers/abj247/SMGLib)
 
 
 
