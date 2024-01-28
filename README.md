@@ -44,7 +44,7 @@ The animations below give an overview of typical problems that OMG-tools can han
 <img width=100% src="vis/random perturb/doorway.gif" alt="Random Perturbation Doorway"/>
 </td>
 <td align="center" valign="center" style="background-color:rgba(0, 0, 0, 0);">
-<img width=100% src="vis/auction/intersection.gif" alt="Auction: Intersection"/>
+<img width=100% src="vis/random perturb/intersection.gif" alt="Random Perturb: Intersection"/>
 </td>
 </tr>
 <tr>
