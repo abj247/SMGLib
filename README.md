@@ -1,4 +1,4 @@
-![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/abj247/MASDA)
+![SMGLib](https://github.com/abj247/SMGLib/assets/111289395/6a649882-a732-4915-9872-ac31b8e89886)![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/abj247/MASDA)
 ![Static Badge](https://img.shields.io/badge/Status-Complete-green)
 ![GitHub Repo stars](https://img.shields.io/github/stars/abj247/MASDA)
 ![GitHub repo file count (file type)](https://img.shields.io/github/directory-file-count/abj247/MASDA)
@@ -6,6 +6,9 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/abj247/MASDA)
 
 
+<p align="center">
+  <img src="logo.png" alt="Logo" width="500"/>
+</p>
 
 
 
