@@ -7,6 +7,13 @@
 
 
 
+<p align="center">
+  <img src="path/to/logo.png" alt="Logo" width="500"/>
+</p>
+
+
+
+
 <div style="display: flex; flex-direction: row;">
     <img src="vis/cadrl/intersection.gif" width="200">
     <img src="vis/cadrl//doorway.gif" width="200" height="160">
