@@ -6,11 +6,12 @@
 ![Static Badge](https://img.shields.io/badge/Status-Complete-green)
 ![GitHub Repo stars](https://img.shields.io/github/stars/abj247/MASDA)
 ![GitHub forks](https://img.shields.io/github/forks/abj247/SMGLib)
+![GitHub watchers](https://img.shields.io/github/watchers/abj247/SMGLib)
+![GitHub issues](https://img.shields.io/github/issues/abj247/SMGLib)
 ![GitHub repo file count (file type)](https://img.shields.io/github/directory-file-count/abj247/MASDA)
 ![GitHub language count](https://img.shields.io/github/languages/count/abj247/MASDA)
 ![GitHub top language](https://img.shields.io/github/languages/top/abj247/MASDA)
-![GitHub issues](https://img.shields.io/github/issues/abj247/SMGLib)
-![GitHub watchers](https://img.shields.io/github/watchers/abj247/SMGLib)
+
 
 
 
