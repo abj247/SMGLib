@@ -131,7 +131,8 @@ Our repository covers a wide spectrum of social navigation scenarios, including 
 * Crowded Traffic 
 * Parallel Traffic 
 * Perpendicular Traffic  
-* Circular Traffic 
+* Circular Traffic
+  
   <div style="display: flex; flex-direction: row;">
     <img src="animations/Social Benchmarks.png" width="800">
   </div>
