@@ -11,18 +11,6 @@
 
 
 
-
-
-
-<div style="display: flex; flex-direction: row;">
-    <img src="vis/cadrl/intersection.gif" width="200">
-    <img src="vis/cadrl//doorway.gif" width="200" height="160">
-    <img src="vis/cadrl/hallway.gif" width="200">
-    <img src="vis/cadrl/lcor.gif" width="200">
-</div>
-
-
-
 # SMGLib: A Social Mini-Game Library
 
 <p class="justify">SMGLib is a library that represents a culmination of extensive efforts dedicated to addressing the intricate challenge of deadlock avoidance within multi-agent social navigation contexts. In bustling environments characterized by doorways, hallways, intersections, and other intricate settings, the seamless and efficient movement of both individuals and autonomous agents is not just a convenience but a critical necessity. It is in this dynamic and challenging backdrop that the project takes center stage. Our primary objective revolves around the meticulous compilation of a diverse array of algorithms and methodologies hailing from various domains, each meticulously curated to serve as a potential solution for the multifaceted deadlock challenges prevalent in social navigation scenarios. </p>
