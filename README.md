@@ -34,6 +34,44 @@
 * Deadlock Avoidance
 * Social Mini-Games
 
+# Overview
+The animations below give an overview of typical problems that OMG-tools can handle.
+
+<table style="border: none; border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0" width="100%" align="center">
+<tr>
+<td align="center" valign="center" style="background-color:rgba(0, 0, 0, 0);" width="33%">
+<img width=100% src="vis/cadrl/intersection.gif" alt="CADRL: Intersection"/>
+</td>
+<td align="center" valign="center" bgcolor="#FFFFFF" width="33%">
+<img width=100% src="vis/cadrl/doorway.gif" alt="CADRL: Doorway"/>
+</td>
+<td align="center" valign="center" style="background-color:rgba(0, 0, 0, 0);" width="33%">
+<img width=100% src="vis/cadrl/lcor.gif" alt="CADRL: L-Corner"/>
+</td>
+<tr>
+<td align="center" valign="center" style="background-color:rgba(0, 0, 0, 0);">
+<img width=100% src="vis/auction/hallway.gif" alt="Auction: Hallway"/>
+</td>
+<td align="center" valign="center" style="background-color:rgba(0, 0, 0, 0);">
+<img width=100% src="vis/random perturb/doorway.gif" alt="Random Perturbation Doorway"/>
+</td>
+<td align="center" valign="center" style="background-color:rgba(0, 0, 0, 0);">
+<img width=100% src="vis/auction/intersection.gif" alt="Auction: Intersection"/>
+</td>
+</tr>
+<tr>
+<td align="center" valign="center" bgcolor="#FFFFFF">
+<img width=100% src="vis/nhttc/doorway.gif" alt="NH-TTC: doorway"/>
+</td>
+<td align="center" valign="center" bgcolor="#FFFFFF">
+<img width=100% src="vis/nhttc/lcor.gif" alt="NH-TTC: L-corner/>
+</td>
+<td align="center" valign="center" bgcolor="#FFFFFF">
+<img width=100% src="vis/nhttc/hallway.gif" alt="NH-TTC: Hallway"/>
+</td>
+</tr>
+</table>
+
 # Table of Contents
 - [**About**](#About)
 - [**Dependcies**](#Dependcies)
@@ -81,6 +119,8 @@ Evaluation
 ```
 python evaluate.py --path_deviation_csv path_deviation_file.csv --avg_delta_velocity_csv avg_delta_velocity_file.csv --evaluate_path_deviation --evaluate_avg_delta_velocity --save_path_deviation_plot --method method_name --scenario scenario_name
 ```
+
+
 
 # Supporterd Scenarios
 Our repository covers a wide spectrum of social navigation scenarios, including but not limited to:
