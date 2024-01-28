@@ -141,6 +141,8 @@ Our repository covers a wide spectrum of social navigation scenarios, including 
 
 # Code Example
 
+This is the elementary code example on how to genetate the trajectory animation for L-Corner scenario for CADRL.
+
 ```python
 import pandas as pd
 import numpy as np
@@ -148,7 +150,7 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 from scipy.spatial.distance import directed_hausdorff
 
-data = pd.read_csv('Lcorner_cadrl.csv')  
+data = pd.read_csv('Lcorner_cadrl.csv')
 
 # Extract actual and nominal trajectory coordinates
 agent_1_x = data.iloc[:, 0]
@@ -203,6 +205,9 @@ ani = animation.FuncAnimation(fig, update, frames=len(agent_1_x), fargs=(agent_1
 gif_path = "./vis/CADRL/lcor.gif"  
 ani.save(gif_path, fps=10)
 ```
+<p align="center">
+<img width=400 src="vis/cadrl/lcor.gif" alt="CADRL: L-Corner animation"/>
+</p>
 
 # Success Metrics
  In the pursuit of excellence within multi-agent social navigation, evaluating the performance and effectiveness of algorithms and methodologies is paramount. To comprehensively assess the impact of our solutions, we employ a set of carefully selected success metrics. These metrics serve as vital benchmarks, offering insights into the efficacy of our approaches in diverse scenarios. The success metrics incorporated into our repository encompass a range of key parameters, each shedding light on a specific aspect of agent behavior and system performance. These metrics include:
