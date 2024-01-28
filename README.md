@@ -123,24 +123,15 @@ python evaluate.py --path_deviation_csv path_deviation_file.csv --avg_delta_velo
 # Supporterd Scenarios
 Our repository covers a wide spectrum of social navigation scenarios, including but not limited to:
 
-* Doorway Navigation: Efficient passage through doorways, especially in crowded settings, is a common challenge. We offer strategies to prevent congestion and deadlocks at entrances and exits.
-
-* Hallway Navigation: Managing traffic flow in narrow hallways is critical for safe and efficient movement. Our algorithms focus on optimizing hallway traversal.
-
-* Intersection Management: Intersections, whether for pedestrians, vehicles, or mixed traffic, demand sophisticated deadlock avoidance strategies. We provide solutions to coordinate and prioritize agent movement at intersections.
-
-* L-Corner Navigation : Navigate L-shaped paths seamlessly, minimizing obstructions and improving traffic fluidity with our advanced strategies.
-
-* Blind Corner Navigation : Ensure safety with proactive measures for unpredictable and unseen challenges at blind corners.
-
-* Crowded Traffic Management :  Efficiently handle high-density areas, reducing congestion and enhancing overall movement flow.
-
-* Parallel Traffic Management : Master parallel movement dynamics to maintain steady and coordinated flows, reducing overlap and inefficiencies
-
-* Perpendicular Traffic Management : Address crossing trajectories effectively, ensuring smooth transitions and reduced collisions.
-
-* Circular Traffic Management : Navigate circular patterns with precision, promoting orderly and continuous motion in roundabout settings.
-
+* Doorway 
+* Hallway 
+* Intersection 
+* L-Corner 
+* Blind Corner 
+* Crowded Traffic 
+* Parallel Traffic 
+* Perpendicular Traffic  
+* Circular Traffic 
   <div style="display: flex; flex-direction: row;">
     <img src="animations/Social Benchmarks.png" width="800">
   </div>
