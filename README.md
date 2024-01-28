@@ -20,7 +20,7 @@
 
 
 <p align="center">
-  <img src="img.png" alt="Logo" width="1000" height="200"/>
+  <img src="img.png" alt="Logo" width="1000" height="1000"/>
 </p>
 
 # SMGLib: A Social Mini-Game Library
