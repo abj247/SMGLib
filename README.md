@@ -17,6 +17,10 @@
 
 <p class="justify">These scenarios are marked by their inherent complexity, where agents need to navigate through spaces while intelligently avoiding bottlenecks, traffic congestion, and potential gridlocks. In the pursuit of deadlock avoidance excellence, the SMGLib is meticulously designed to offer a plethora of innovative strategies tailored to address these real-world challenges. Whether it's guiding pedestrians through congested doorways, orchestrating the movements of autonomous vehicles within intricate intersections, or facilitating the seamless flow of agents in narrow hallways, SMGLib houses a rich collection of algorithms catering to an extensive spectrum of scenarios.</p>
 
+This library focuses on multi agent navigation in social-mini games. The approaches implemented are taken from following publications
+S. Dergachev and K. Yakovlev, "Distributed Multi-Agent Navigation Based on Reciprocal Collision Avoidance and Locally Confined Multi-Agent Path Finding," in Proceedings of the 17th International Conference on Automation Science and Engineering (CASE 2021), Lyon, France, 2021, pp. 1489-1494. [pdf](https://arxiv.org/pdf/2107.00246.pdf)
+
+
 # About
 * Multi Agent Navigation
 * Deadlock Avoidance
