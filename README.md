@@ -1,6 +1,7 @@
 <p align="left">
   <img src="img.png" alt="Logo" width="400"/>
 </p>
+
 ![Static Badge](https://img.shields.io/badge/Status-Complete-green)
 ![GitHub Repo stars](https://img.shields.io/github/stars/abj247/MASDA)
 ![GitHub repo file count (file type)](https://img.shields.io/github/directory-file-count/abj247/MASDA)
