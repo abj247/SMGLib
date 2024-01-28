@@ -8,9 +8,7 @@
 
 
 
-<p align="left">
-  <img src="img.png" alt="Logo" width="400"/>
-</p>
+
 
 
 <div style="display: flex; flex-direction: row;">
@@ -20,6 +18,10 @@
     <img src="vis/cadrl/lcor.gif" width="200">
 </div>
 
+
+<p align="left">
+  <img src="img.png" alt="Logo" width="400"/>
+</p>
 
 # SMGLib: A Social Mini-Game Library
 
