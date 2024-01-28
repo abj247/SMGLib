@@ -1,6 +1,4 @@
-<p align="left">
-  <img src="img.png" alt="Logo" width="400"/>
-</p>
+
 
 ![Static Badge](https://img.shields.io/badge/Status-Complete-green)
 ![GitHub Repo stars](https://img.shields.io/github/stars/abj247/MASDA)
@@ -10,7 +8,9 @@
 
 
 
-
+<p align="left">
+  <img src="img.png" alt="Logo" width="400"/>
+</p>
 
 
 <div style="display: flex; flex-direction: row;">
