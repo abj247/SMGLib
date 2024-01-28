@@ -78,6 +78,7 @@ The animations below give an overview of typical problems that OMG-tools can han
 - [**Installation**](#Installation)
 - [**Evaluation**](#Evaluation)
 - [**Supported Scenarios**](#Supported-Scenarios)
+- [**Code Example**](#Code-Example)
 - [**Success Metrics**](#Success-Metrics)
 
 
@@ -136,6 +137,72 @@ Our repository covers a wide spectrum of social navigation scenarios, including 
   <div style="display: flex; flex-direction: row;">
     <img src="animations/Social Benchmarks.png" width="800">
   </div>
+
+
+# Code Example
+
+```python
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.animation as animation
+from scipy.spatial.distance import directed_hausdorff
+
+data = pd.read_csv('Lcorner_cadrl.csv')  
+
+# Extract actual and nominal trajectory coordinates
+agent_1_x = data.iloc[:, 0]
+agent_2_x = data.iloc[:, 2]
+agent_1_y = data.iloc[:, 1]
+agent_2_y = data.iloc[:, 3]
+
+# Compute trajectory difference
+diff_x = agent_1_x - agent_2_x
+diff_y = actual_1_y - agent_2_y
+
+
+# Calculate Hausdorff distance
+agent_1_trajectory = np.column_stack((agent_1_x, agent_1_y))
+agent_2_trajectory = np.column_stack((agent_2_x, agent_2_y))
+hausdorff_dist = directed_hausdorff(agent_1_trajectory, agent_2_trajectory)[0]
+
+
+fig, ax = plt.subplots(figsize=(10, 8))
+plt.style.use('seaborn-darkgrid')
+
+ax.set_xlim(min(min(agent_1_x), min(agent_2_x)) - 1, max(max(agent_1_x), max(agent_2_x)) + 1)
+ax.set_ylim(min(min(agent_1_y), min(agent_2_y)) - 1, max(max(agent_1_y), max(agent_2_y)) + 1)
+
+# Set Obstacles Positions
+
+circles = [(-1.0, -1.0, 0.1), (-1.2, -1.0, 0.1), (-1.4, -1.0, 0.1), (-0.8, -1.0, 0.1), (-0.6, -1.0, 0.1), (0.0, -1.0, 0.1), (0.2, -1.0, 0.1), (0.4, -1.0, 0.1), (0.6, -1.0, 0.1), (0.8, -1.0, 0.1), (1.0, -1.0, 0.1), (1.2, -1.0, 0.1), (-1.6, -1.0, 0.1), (-1.8, -1.0, 0.1), (-2.0, -1.0, 0.1), (-2.2, -1.0, 0.1), (-2.4, -1.0, 0.1)]  # Replace with your circle positions and sizes
+for x, y, radius in circles:
+    circle = plt.Circle((x, y), radius, color='black', fill=True)
+    ax.add_artist(circle)
+
+agent_1_traj_line, = ax.plot([], [], linestyle='-', linewidth=2, color='blue', label='Agent 1 Trajectory')
+agent_2_traj_line, = ax.plot([], [], linestyle='-', linewidth=2, color='green', label='Agent 2 Trajectory')
+
+# Set labels, title, and legend
+ax.set_xlabel('X', fontsize=12)
+ax.set_ylabel('Y', fontsize=12)
+ax.set_title('Trajectory Generation', fontsize=14)
+ax.legend(fontsize=12)
+ax.grid(True, linestyle='--', alpha=0.7)
+
+# Function to update the animation
+def update(num, agent_1_x, agent_1_y, agent_2_x, agent_2_y):
+    agent_1_traj_line.set_data(agent_1_x[:num], agent_1_y[:num])
+    nominal_traj_line.set_data(agent_2_x[:num], agent_2_y[:num])
+    return agent_1_traj_line, agent_2_traj_line
+
+# Creating the animation
+ani = animation.FuncAnimation(fig, update, frames=len(agent_1_x), fargs=(agent_1_x, agent_1_y, agent_2_x, agent_2_y), blit=True)
+
+# Save the animation as a GIF
+gif_path = "./vis/CADRL/lcor.gif"  
+ani.save(gif_path, fps=10)
+```
 
 # Success Metrics
  In the pursuit of excellence within multi-agent social navigation, evaluating the performance and effectiveness of algorithms and methodologies is paramount. To comprehensively assess the impact of our solutions, we employ a set of carefully selected success metrics. These metrics serve as vital benchmarks, offering insights into the efficacy of our approaches in diverse scenarios. The success metrics incorporated into our repository encompass a range of key parameters, each shedding light on a specific aspect of agent behavior and system performance. These metrics include:
