@@ -8,6 +8,7 @@
 ![GitHub repo file count (file type)](https://img.shields.io/github/directory-file-count/abj247/MASDA)
 ![GitHub language count](https://img.shields.io/github/languages/count/abj247/MASDA)
 ![GitHub top language](https://img.shields.io/github/languages/top/abj247/MASDA)
+![GitHub issues](https://img.shields.io/github/issues/abj247/SMGLib)
 
 
 
