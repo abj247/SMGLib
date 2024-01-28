@@ -7,9 +7,6 @@
 
 
 
-<p align="center">
-  <img src="SMGLib.png" alt="Logo" width="500"/>
-</p>
 
 
 
