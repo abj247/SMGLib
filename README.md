@@ -154,7 +154,7 @@ Our repository covers a wide spectrum of social navigation scenarios, including 
 <img width=100% src="scenarios/blind.png" alt="Blind Corner"/>
 </td>
 <td align="center" valign="center" style="background-color:rgba(0, 0, 0, 0);">
-<img width=100% src="scenarios/crowded.png" alt="Crowded/>
+<img width=100% src="scenarios/crowded.png" alt="Crowded"/>
 </td>
 </tr>
 <tr>
