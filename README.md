@@ -8,7 +8,7 @@
 
 
 <p align="center">
-  <img src="path/to/logo.png" alt="Logo" width="500"/>
+  <img src="SMGLib.png" alt="Logo" width="500"/>
 </p>
 
 
