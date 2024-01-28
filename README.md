@@ -134,9 +134,41 @@ Our repository covers a wide spectrum of social navigation scenarios, including 
 * Perpendicular Traffic  
 * Circular Traffic
   
-  <div style="display: flex; flex-direction: row;">
-    <img src="animations/Social Benchmarks.png" width="800">
-  </div>
+
+<table style="border: none; border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0" width="100%" align="center">
+<tr>
+<td align="center" valign="center" style="background-color:rgba(0, 0, 0, 0);" width="33%">
+<img width=100% src="scenarios/doorway.png" alt="doorway"/>
+</td>
+<td align="center" valign="center" bgcolor="#FFFFFF" width="33%">
+<img width=100% src="scenarios/intersection.png" alt="intersection"/>
+</td>
+<td align="center" valign="center" style="background-color:rgba(0, 0, 0, 0);" width="33%">
+<img width=100% src="scenarios/hallway.png" alt="hallway"/>
+</td>
+<tr>
+<td align="center" valign="center" style="background-color:rgba(0, 0, 0, 0);">
+<img width=100% src="scenarios/L-corner.png" alt="L-corner"/>
+</td>
+<td align="center" valign="center" style="background-color:rgba(0, 0, 0, 0);">
+<img width=100% src="scenarios/blind.png" alt="Blind Corner"/>
+</td>
+<td align="center" valign="center" style="background-color:rgba(0, 0, 0, 0);">
+<img width=100% src="scenarios/crowded.png" alt="Crowded/>
+</td>
+</tr>
+<tr>
+<td align="center" valign="center" bgcolor="#FFFFFF">
+<img width=100% src="scenarios/parallel.png" alt="Parallel"/>
+</td>
+<td align="center" valign="center" bgcolor="#FFFFFF">
+<img width=100% src="vis/nhttc/perpencicular.png" alt="Perpendicular"/>
+</td>
+<td align="center" valign="center" bgcolor="#FFFFFF">
+<img width=100% src="vis/nhttc/circular.png" alt="Circular"/>
+</td>
+</tr>
+</table>
 
 
 # Code Example
