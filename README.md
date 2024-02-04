@@ -39,7 +39,7 @@ This library focuses on multi agent navigation in social-mini games. The approac
 * Social Mini-Games
 
 # Overview
-The animations below give an overview of typical problems that OMG-tools can handle.
+The animations below give an overview of typical problems that SMG-tools can handle.
 
 <table style="border: none; border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0" width="100%" align="center">
 <tr>
